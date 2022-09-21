@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
+    padding: 1em;
+    width: 40%;
+    margin: 2em auto;
+    background-color: #394049;
+    border-radius: 5px;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-header {
+    padding: 0.5em;
+    border-bottom: 1px solid #2c3035;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-header h1 {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-todo {
+    padding: 1em;
+    margin: 0 2em;
+    border-bottom: 1px solid #2c3035;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.form-todo h2,
+.list-todo h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: .4em;
+}
+
+.form-control input {
+    border: 1px solid #222;
+    border-radius: 2px;
+    background-color: #2c3035;
+    padding: .5em;
+    outline: none;
+    color: #dfdfdf;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #00ff88;
+    color: #201b2c;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 3em;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.list-todo {
+    padding: 0 1em 2em;
+}
+
+.list-todo h2 {
+    margin-top: 1em;
+}
+ 
+.todo {
+    background-color: #201b2c;
+    padding: 5px 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+.todo-done {
+    text-decoration: line-through;
+}
+
+
+.todo p {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.todo svg {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 1em;
+    transition: .5s;
+}
+
+.todo svg:hover {
+    color: #00ff88;
 }
